@@ -17,7 +17,7 @@ benchmark: RHEL7-STIG
 rhel7stig_skip_reboot: true
 
 ### Audit Binary is required on the remote host
-setup_audit: false
+setup_audit: true
 # How to retrieve audit binary
 # Options are copy or download - detailed settings at the bottom of this file
 # you will need to access to either github or the file already dowmloaded
@@ -25,7 +25,7 @@ get_audit_binary_method: download
 
 # how to get audit files onto host options
 # options are git/copy/get_url other e.g. if you wish to run from already downloaded conf
-audit_content: git
+audit_content: copy
 
 # enable audits to run - this  runs the audit and get the latest content
 run_audit: true

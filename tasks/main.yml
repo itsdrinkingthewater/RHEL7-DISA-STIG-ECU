@@ -20,6 +20,10 @@
       msg: You must use Ansible {{ rhel7stig_min_ansible_version }} or greater
   tags:
       - always
+      
+- name: Do not count this as a failure
+  ansible.builtin.command: /bin/false
+  ignore_errors: yes
 
 - name: FIPS turned on
   set_fact:

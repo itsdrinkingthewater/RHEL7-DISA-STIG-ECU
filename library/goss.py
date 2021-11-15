@@ -91,7 +91,7 @@ def main():
             vars_path=dict(required=False, type='str'),
             goss_path=dict(required=False, default='goss', type='str'),
         ),
-        supports_check_mode=False
+        supports_check_mode=true
     )
 
     test_file_path = module.params['path']  # test file path

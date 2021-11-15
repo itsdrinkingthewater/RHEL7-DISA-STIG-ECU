@@ -351,9 +351,7 @@ rhel7stig_smartcarddriver: cackey
 # You will need to adjust the paths for installed HIPS/HBSS for this control.
 # You will need to map both the local interactive and LDAP groups to map selinux user groups to.
 # If LDAP is not in use, it will ignore the settings below and not attempt to map LDAP users.
-rhel_07_020020_selinux_change_users: true
-rhel_07_020020_HBSS_path: /opt/McAfee/Agent/bin
-rhel_07_020020_HIPS_path: /opt/McAfee/Agent/bin
+rhel_07_020020_selinux_change_users: false
 rhel_07_020020_selinux_ldap_maps: false
 rhel_07_020020_selinux_local_interactive_admin_group: wheel
 rhel_07_020020_selinux_local_interactive_users_group: users

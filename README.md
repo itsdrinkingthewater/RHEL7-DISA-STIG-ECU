@@ -1,11 +1,8 @@
 RHEL 7 DISA STIG
 ================
 
-![Build Status](https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/CommunityToDevel?label=Devel%20Build%20Status&style=plastic)
-![Build Status](https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic)
-![Release](https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic)
 
-Configure a RHEL 7 system to be DISA STIG compliant. All findings will be audited by default. Non-disruptive CAT I, CAT II, and CAT III findings will be corrected by default. Disruptive finding remediation can be enabled by setting `rhel7stig_disruption_high` to `yes`.
+Configure a RHEL 7 system to be DISA STIG compliant, with customisations for ECU and audit/dry-run only. All findings will be audited by default. Non-disruptive CAT I, CAT II, and CAT III findings will be corrected by default. Disruptive finding remediation can be enabled by setting `rhel7stig_disruption_high` to `yes`.
 
 This role is based on RHEL 7 DISA STIG: [Version 3, Rel 4 released on Jul 23, 2021](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RHEL_7_V3R4_STIG.zip).
 

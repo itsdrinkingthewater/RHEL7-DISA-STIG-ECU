@@ -691,7 +691,7 @@ audit_bin_url: "https://github.com/aelsabbahy/goss/releases/download/{{ audit_bi
 ## if get_audit_binary_method - copy the following needs to be updated for your environment
 ## it is expected that it will be copied from somewhere accessible to the control node
 ## e.g copy from ansible control node to remote host
-audit_bin_copy_location: /some/accessible/path
+audit_bin_copy_location: /var/stig/path
 
 ### Goss Audit Benchmark file ###
 ## managed by the control audit_content
@@ -700,7 +700,7 @@ audit_file_git: "https://github.com/ansible-lockdown/{{ benchmark }}-Audit.git"
 audit_git_version: main
 
 # copy:
-audit_local_copy: "some path to copy from"
+audit_local_copy: "/var/stig.yml"
 
 # get_url:
 audit_files_url: "some url maybe s3?"
